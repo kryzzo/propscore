@@ -58,12 +58,12 @@ runall = function(n_sims = 1000, n = 1000, type = "basic",
     .GlobalEnv$graphics_on = TRUE
     
     ### CREATE DATA ###
-    source("thesis_02_data_simulation.R")
+    source("02_data_simulation.R")
     
     ### RUN METHODS ###
-    source("thesis_03_cov_adj.R")
-    source("thesis_04_matching.R")
-    source("thesis_05_IPTW.R")
+    source("03_cov_adj.R")
+    source("04_matching.R")
+    source("05_IPTW.R")
     
   } else {
     
@@ -74,19 +74,19 @@ runall = function(n_sims = 1000, n = 1000, type = "basic",
       if (i%%(n_sims%/%10)==0) {print(i)}
       
       ### CREATE DATA ###
-      source("thesis_02_data_simulation.R")
+      source("02_data_simulation.R")
       
       ### RUN METHODS ###
-      source("thesis_03_cov_adj.R")
-      source("thesis_04_matching.R")
-      source("thesis_05_IPTW.R")
+      source("03_cov_adj.R")
+      source("04_matching.R")
+      source("05_IPTW.R")
       
       ### ANALYSE ###
-      source("thesis_06_confints.R")
+      source("06_confints.R")
     }
     
     ### COMPARISON ###
-    source("thesis_07_compare.R")
+    source("07_compare.R")
     
   }
 }
