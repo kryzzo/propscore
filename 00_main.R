@@ -7,7 +7,7 @@
 
 
 ### SETUP ###
-source("thesis_01_setup.R")
+source("01_setup.R")
 
 
 ### RCT ###
